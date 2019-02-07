@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>FizzBuzz test page</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='green.css' ) }}">
+</head>
+<body>
+
+Character counter <br>
+
+<p id="log"></p>
+
+<textarea rows="4" cols="50" id="textarea_id">
+
+</textarea>
+<br>
+Look at the console after push the button
+<br>
+    <div id="buttons-wrapper">
+
+
+        <button type="button" id="button1" class="buttons" >Click Me!</button>
+        <button type="button" id="button2" class="buttons" >Click Me!</button>
+        <button type="button" id="button3" class="buttons" >Click Me!</button>
+
+
+    </div>
+
+
+<br>
+
+Save the text to local sotarge with json
+<br>
+<textarea rows="4" cols="50" id="textarea_json" onkeyup="json_converter()"></textarea>
+
+
+<p id="log2"></p>
+
+<br>
+
+
+<button type="button" id="button4" onclick="error_handling()"  >Erro handling button</button>
+
+<br>
+
+ <div class="blocks" data-speed="3.2" data-distance="600">dataset controll</div>
+ <div class="blocks" data-speed="2.2" data-distance="600">dataset controll</div>
+
+<div id="left" class="drag_n_drop">left
+
+
+</div>
+
+<div id="center" class="drag_n_drop">center
+  <div class="dd_element">elemnt to drag and drop</div>
+</div>
+
+<div id="right" class="drag_n_drop">right
+
+</div>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.css" />
+<script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js' defer></script>
+
+
+<script src='{{ url_for('static', filename='dragula_teszt.js' ) }}' defer></script>
+
+
+   <script src="{{ url_for('static', filename='si_event.js' ) }}"></script>
+</body>
+</html>

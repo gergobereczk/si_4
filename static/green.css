@@ -1,0 +1,41 @@
+body {
+  background-color: lightblue;
+}
+
+div.test_div {
+  width: 300px;
+  border: 25px solid green;
+  padding: 25px;
+  margin: 25px;
+position: absolute}
+
+.buttons {color: red}
+
+div.blocks { width: 50px; color: #cc8b00;   border: 25px solid green; margin:30px; transition: left 0s linear 0s;  position: absolute;
+  left: 0px;}
+
+
+div.drag_n_drop {
+
+  border: 5px red;
+  margin:30px;
+  width:400px;
+  background-color:white;
+  height: 400px;
+  float:left;
+  margin-top:250px;
+  text-align:center;
+}
+
+
+
+
+
+
+div.dd_element
+
+{
+  background-color:green;
+  height: 70px;
+
+}
